@@ -13,6 +13,7 @@ class Auth(Resource):
 
     def get(self):
         data = Auth.parser.parse_args()
+        print(data)
         if data['code']:
             return render_template('hello.html')
         else:
