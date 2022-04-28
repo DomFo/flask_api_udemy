@@ -33,7 +33,7 @@ api.add_resource(StoreList, '/stores')
 api.add_resource(UserRegister, '/register')
 api.add_resource(User, '/user/<int:user_id>')
 api.add_resource(UserLogin, '/login')
-# api.add_resource(Auth, '/')
+api.add_resource(Auth, '/')
 
 
 if __name__ == '__main__':
